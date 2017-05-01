@@ -23,17 +23,13 @@ class MusicStore:
         dq = queue.Queue()
         dq2 = queue.Queue()
         _thread.start_new_thread(filebrowser.search_files, (MEDIA_ROOT_DIR, '.mp3', dq))
-        print('tc')
         for _ in range(3):
             _thread.start_new_thread(metadatareader.getmp3metadata, (dq, dq2))
-            print('tc')
-        c = 1
         while True:
             try:
                 d = dq2.get(block=True)
                 if d == 'endendend':
                     break
-                print(c); c+= 1
                 self.musicDb.insertsong(d)
             except queue.Empty:
                 continue
