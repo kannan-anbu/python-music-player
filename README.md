@@ -12,3 +12,22 @@ cross platform music player written in python
 
 ### How to launch
 `$ python3 launcher.py`
+
+### Screenshots
+
+![](https://github.com/kannan-anbu/python-music-player/blob/master/screenshot/now_playing_tab.jpg)
+
+
+![](https://github.com/kannan-anbu/python-music-player/blob/master/screenshot/songs_tab.jpg)
+
+
+![](https://github.com/kannan-anbu/python-music-player/blob/master/screenshot/albums_tab.jpg)
+
+
+![](https://github.com/kannan-anbu/python-music-player/blob/master/screenshot/album_songs_tab.jpg)
+
+
+![](https://github.com/kannan-anbu/python-music-player/blob/master/screenshot/artist_tab.jpg)
+
+
+![](https://github.com/kannan-anbu/python-music-player/blob/master/screenshot/artist_songs_tab.jpg)
