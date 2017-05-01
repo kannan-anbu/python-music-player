@@ -2,7 +2,7 @@ import os
 
 DEBUG                   = not True
 
-MEDIA_ROOT_DIR			= os.path.expanduser("~")
+MEDIA_ROOT_DIR          = os.path.expanduser("~")
 IMAGE_CACHE_DIR         = 'temp/'
 if not os.path.exists(IMAGE_CACHE_DIR):
     os.makedirs(IMAGE_CACHE_DIR)
