@@ -10,4 +10,4 @@ cross platform music player written in python
 | platform       | cross platform                  |
 
 ### How to launch
-`python3 launcher.py`
+`$ python3 launcher.py`
