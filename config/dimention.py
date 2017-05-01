@@ -1,0 +1,114 @@
+
+NO_MARGIN       = (0, 0, 0, 0)
+
+""" Controls Bar """
+
+CONTROLS_BAR_GEO            = (0, 0, 800, 50)
+CONTROLS_BAR_SPACING        = 5
+CONTROLS_BAR_PADDING        = (5, 5, 5, 5)
+
+CONTROLS_BAR_TEXT_LAYOUT_GEO    = (
+    0,
+    0,
+    175,
+    CONTROLS_BAR_GEO[3] - 2*CONTROLS_BAR_PADDING[1],
+)
+
+CONTROLS_BAR_TEXT_LARGE_PT  = 14
+CONTROLS_BAR_TEXT_SMALL_PT  = 10
+
+CONTROLS_BAR_BUTTON_LARGE_GEO   = (
+    0,
+    0,
+    CONTROLS_BAR_GEO[3],
+    CONTROLS_BAR_GEO[3],
+)
+
+CONTROLS_BAR_BUTTON_SMALL_GEO   = (
+    0,
+    0,
+    CONTROLS_BAR_GEO[3] - CONTROLS_BAR_PADDING[1],
+    CONTROLS_BAR_GEO[3] - CONTROLS_BAR_PADDING[1],
+)
+
+
+""" Navigation Bar """
+
+NAV_BAR_GEO         = (0, 0, 50, 400)
+NAV_BAR_SPACING     = 0
+NAV_BAR_PADDING     = (0, 0, 0, 0)
+
+NAV_BAR_BUTTON_GEO = (
+    0,
+    0,
+    NAV_BAR_GEO[2] - 2*NAV_BAR_PADDING[0],
+    NAV_BAR_GEO[2] - 2*NAV_BAR_PADDING[0],
+)
+
+
+""" Main Panel """
+
+MAIN_PANEL_GEO      = (0, 0, 750, 400)
+MAIN_PANEL_SPACING  = 0
+MAIN_PANEL_PADDING  = (20, 20, 20, 20)
+
+
+""" Pager """
+
+PAGER_GEO           = (
+    0,
+    0,
+    MAIN_PANEL_GEO[2] - 2*MAIN_PANEL_PADDING[0],
+    MAIN_PANEL_GEO[3] - 2*MAIN_PANEL_PADDING[1],
+)
+PAGER_SPACING       = 0
+PAGER_PADDING       = (0, 0, 0, 0)
+
+""" Pager Header """
+
+PAGER_HEADER_GEO        = (
+    0,
+    0,
+    PAGER_GEO[2] - 2*PAGER_PADDING[0],
+    70,
+)
+PAGER_HEADER_SPACING    = 10
+PAGER_HEADER_PADDING    = (0, 0, 0, 20)
+
+""" Page """
+PAGER_PAGE_GEO          = (
+    0,
+    0,
+    PAGER_GEO[2] - 2*PAGER_PADDING[0],
+    PAGER_GEO[3] - 2*PAGER_PADDING[1] - PAGER_SPACING - PAGER_HEADER_GEO[3],
+)
+PAGER_PAGE_SPACING      = 15
+PAGER_PAGE_PADDING      = (0, 0, 0, 0)
+
+""" Now Playing page """
+
+NOW_PLAYING_PAGE_GEO    = PAGER_PAGE_GEO
+NOW_PLAYING_QUEUE_GEO    = (
+    0,
+    0,
+    NOW_PLAYING_PAGE_GEO[2] // 2 - PAGER_PAGE_SPACING,
+    NOW_PLAYING_PAGE_GEO[3]
+)
+NOW_PLAYING_QUEUE_PADDING   = (0, 0, 0, 0)
+NOW_PLAYING_QUEUE_SPACING   = 0
+SONG_DETAILS_PANEL_GEO    = (
+    0,
+    0,
+    NOW_PLAYING_PAGE_GEO[2] // 2 - PAGER_PAGE_SPACING,
+    NOW_PLAYING_PAGE_GEO[3]
+)
+SONG_DETAILS_PANEL_PADDING   = (0, 0, 0, 0)
+SONG_DETAILS_PANEL_SPACING   = 0
+
+
+""" Gui """
+
+GUI_GEO             = (0, 0, 800, 600)
+GUI_SPACING         = 0
+GUI_PADDING         = (0, 0, 0, 0)
+
