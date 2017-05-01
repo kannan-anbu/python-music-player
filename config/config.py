@@ -1,8 +1,11 @@
-from os.path import expanduser
+import os
 
 DEBUG                   = not True
 
-MEDIA_ROOT_DIR			= expanduser("~")
+MEDIA_ROOT_DIR			= os.path.expanduser("~")
+IMAGE_CACHE_DIR         = 'temp/'
+if not os.path.exists(IMAGE_CACHE_DIR):
+    os.makedirs(IMAGE_CACHE_DIR)
 
 MUSICDB_NAME            = 'music_database'
 TABLE_SONGS             = 'table_songs'

@@ -3,14 +3,17 @@ import io, traceback
 from PIL import Image, ImageQt
 
 from utils.log import log
+from config.config import *
+
 
 
 def artname(songtitle):
-    return 'temp/art_orig_' + songtitle
+    return IMAGE_CACHE_DIR + 'art_orig_' + songtitle
 
 
 def thumbname(songtitle):
-    return 'temp/art_thumb_' + songtitle
+    return IMAGE_CACHE_DIR + 'art_thumb_' + songtitle
+
 
 
 def createimage(imgbytes, songtitle):
