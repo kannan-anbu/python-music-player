@@ -1,6 +1,8 @@
-
+from os.path import expanduser
 
 DEBUG                   = not True
+
+MEDIA_ROOT_DIR			= expanduser("~")
 
 MUSICDB_NAME            = 'music_database'
 TABLE_SONGS             = 'table_songs'

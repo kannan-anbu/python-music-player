@@ -3,6 +3,7 @@ import _thread, queue
 from mediastore import filebrowser, metadatareader
 from mediastore.musicdb import MusicDb
 from utils.songattributes import *
+from config.config import *
 
 
 class MusicStore:
@@ -21,9 +22,7 @@ class MusicStore:
 
         dq = queue.Queue()
         dq2 = queue.Queue()
-        # _thread.start_new_thread(filebrowser.search_files, ('/media/kannan/FUN/gokul/Backup for my phone songs', '.mp3', dq))
-        _thread.start_new_thread(filebrowser.search_files, ('/media/kannan/FUN/gokul/English Songs', '.mp3', dq))
-        # _thread.start_new_thread(filebrowser.search_files, ('/home/kannan/Downloads', '.mp3', dq))
+        _thread.start_new_thread(filebrowser.search_files, (MEDIA_ROOT_DIR, '.mp3', dq))
         print('tc')
         for _ in range(3):
             _thread.start_new_thread(metadatareader.getmp3metadata, (dq, dq2))
