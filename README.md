@@ -6,6 +6,7 @@ cross platform music player written in python
 | --------------  |:--------------------------------:|
 | prog.language   | python 3.4                       |
 | gui framework   | PyQt 5                           |
+| image editing   | Pillow (PIL fork)                |
 | media streamer  | Gstreamer 1.0 (python wrapper)   |
 | metadata reader | mutagen 1.37                     |
 | platform        | cross platform                   |
